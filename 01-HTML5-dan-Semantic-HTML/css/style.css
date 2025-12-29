@@ -1,6 +1,47 @@
-:root {
-  background-color: black;
+.navbar {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: antiquewhite;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-body {
-  background-color: rgb(248, 252, 255);
+
+.navbar-links {
+  flex-direction: row;
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: 333;
+  font-weight: 500;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 5%;
+}
+
+.hero-text {
+  border: 20px slategray;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  justify-content: left;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
 }
